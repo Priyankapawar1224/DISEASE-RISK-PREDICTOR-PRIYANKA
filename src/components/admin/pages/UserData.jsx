@@ -7,8 +7,6 @@ export default function UsersData() {
 
 const [users,setUsers] = useState([])
 const [search,setSearch] = useState("")
-const [editingUser,setEditingUser] = useState(null)
-const [editUser,setEditUser] = useState({})
 
 const [symptoms,setSymptoms] = useState([])
 const [newSymptom,setNewSymptom] = useState("")
@@ -48,29 +46,6 @@ localStorage.setItem("users",JSON.stringify(updated))
 
 }
 
-
-/* ---------------- EDIT USER ---------------- */
-
-const startEditUser = (index)=>{
-setEditingUser(index)
-setEditUser(users[index])
-}
-
-const saveUser = ()=>{
-
-const updated=[...users]
-
-updated[editingUser]=editUser
-
-setUsers(updated)
-
-localStorage.setItem("users",JSON.stringify(updated))
-
-setEditingUser(null)
-
-}
-
-const cancelEditUser = ()=> setEditingUser(null)
 
 
 
@@ -464,9 +439,6 @@ onChange={(e)=>updateStatus(index,e.target.value)}
 
 <td>
 
-<button onClick={()=>startEditUser(index)}>
-Edit
-</button>
 
 <button onClick={()=>deleteUser(index)}>
 Delete

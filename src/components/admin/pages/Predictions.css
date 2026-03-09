@@ -1,0 +1,155 @@
+/* ============================= */
+/* PAGE CONTAINER */
+.predictions-page {
+  padding: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f0f9ff, #dbeafe); /* soft blue gradient background */
+}
+
+/* ============================= */
+/* PAGE TITLE */
+.predictions-page h1 {
+  margin-bottom: 25px;
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+
+  /* Gradient Text */
+  background: linear-gradient(90deg, #3b82f6, #06b6d4, #9333ea);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ============================= */
+/* TABLE CONTAINER */
+.predictions-table-container {
+  overflow-x: auto;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  padding: 20px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.predictions-table-container:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15);
+}
+
+/* ============================= */
+/* TABLE STYLES */
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  font-size: 15px;
+  text-align: center;
+}
+
+/* TABLE HEADERS */
+th {
+  background: linear-gradient(90deg, #3b82f6, #06b6d4);
+  color: #fff;
+  font-weight: 600;
+  padding: 14px 20px;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* TABLE CELLS */
+td {
+  padding: 14px 20px;
+  text-align: center;
+  font-size: 15px;
+  color: #374151;
+  border-bottom: 1px solid #e5e7eb;
+  background: #f9fafb; /* subtle row background */
+}
+
+/* ALTERNATE ROW COLORS */
+tbody tr:nth-child(even) td {
+  background: #f3f4f6;
+}
+
+/* ============================= */
+/* RISK LEVEL COLORS */
+.risk-low {
+  color: #10b981; /* green */
+  font-weight: 600;
+}
+
+.risk-medium {
+  color: #f59e0b; /* orange */
+  font-weight: 600;
+}
+
+.risk-high {
+  color: #ef4444; /* red */
+  font-weight: 600;
+}
+
+/* ROW HOVER EFFECT */
+tbody tr:hover td {
+  background: #e0f2fe; /* light blue hover */
+  transform: scale(1.01);
+  transition: 0.2s ease-in-out;
+}
+
+/* ============================= */
+/* TABLE CAPTION / NOTES */
+.predictions-table-caption {
+  text-align: right;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* ============================= */
+/* RESPONSIVE STYLING */
+@media (max-width: 768px) {
+  th, td {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+
+  .predictions-page h1 {
+    font-size: 28px;
+  }
+}
+
+/* ============================= */
+/* OPTIONAL DARK MODE */
+body[data-theme="dark"] .predictions-page {
+  background: linear-gradient(135deg, #1f2937, #111827);
+  color: #f9fafb;
+}
+
+body[data-theme="dark"] .predictions-table-container {
+  background: #1f2937;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+body[data-theme="dark"] th {
+  background: linear-gradient(90deg, #6366f1, #8b5cf6);
+  color: #f9fafb;
+}
+
+body[data-theme="dark"] td {
+  background: #374151;
+  color: #f9fafb;
+  border-bottom: 1px solid #4b5563;
+}
+
+body[data-theme="dark"] tbody tr:nth-child(even) td {
+  background: #4b5563;
+}
+
+body[data-theme="dark"] tbody tr:hover td {
+  background: #2563eb;
+  color: #fff;
+}

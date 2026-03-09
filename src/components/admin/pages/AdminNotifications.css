@@ -1,0 +1,111 @@
+.admin-notification-page {
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+/* STATS CARDS */
+.stats {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.stats .card {
+  flex: 1;
+  padding: 15px;
+  background: #f3f4f6;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* SEARCH */
+.search {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* FORM */
+.form {
+  background: #e0f2fe;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.form input, .form textarea, .form select {
+  width: 100%;
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.form button {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #6366f1;
+  color: white;
+  font-weight: bold;
+}
+
+.form button.clear {
+  background: #ef4444;
+}
+
+/* NOTIFICATION LIST */
+.notification-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.notification {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 8px;
+  background: #f9fafb;
+  border-left: 5px solid #6366f1;
+}
+
+.notification.Info { border-left-color: #3b82f6; }
+.notification.Warning { border-left-color: #f59e0b; }
+.notification.Health { border-left-color: #10b981; }
+
+.left h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.left p {
+  margin: 5px 0;
+}
+
+.right button {
+  margin-left: 5px;
+  padding: 5px 8px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.right button:hover {
+  opacity: 0.8;
+}

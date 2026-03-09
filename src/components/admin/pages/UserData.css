@@ -1,0 +1,266 @@
+/* ================= PAGE ================= */
+
+.users-page{
+padding:30px;
+font-family:'Segoe UI',sans-serif;
+min-height:100vh;
+background:linear-gradient(135deg,#fdf6f9,#f7f7ff,#f8fbff);
+display:flex;
+flex-direction:column;
+gap:25px;
+}
+
+
+/* ================= ANALYTICS CARDS ================= */
+
+.analytics-cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+}
+
+.card{
+padding:25px;
+border-radius:15px;
+color:#444;
+font-size:18px;
+font-weight:600;
+text-align:center;
+box-shadow:0 8px 15px rgba(0,0,0,0.08);
+transition:0.3s;
+background:#ffffff;
+}
+
+.card:hover{
+transform:translateY(-5px);
+box-shadow:0 10px 18px rgba(0,0,0,0.12);
+}
+
+
+/* soft pastel cards */
+
+.card:nth-child(1){
+background:linear-gradient(135deg,#fce7f3,#fdf2f8);
+}
+
+.card:nth-child(2){
+background:linear-gradient(135deg,#fef3c7,#fff7ed);
+}
+
+.card:nth-child(3){
+background:linear-gradient(135deg,#e9f5f3,#f3faf9);
+}
+
+.card:nth-child(4){
+background:linear-gradient(135deg,#ede9fe,#f5f3ff);
+}
+
+.card:nth-child(5){
+background:linear-gradient(135deg,#f5f5f4,#fafaf9);
+}
+
+
+/* ================= AI PANEL ================= */
+
+.ai-panel{
+background:#f8fafc;
+padding:20px;
+border-radius:15px;
+font-weight:500;
+box-shadow:0 5px 10px rgba(0,0,0,0.08);
+}
+
+.ai-panel h3{
+color:#444;
+}
+
+
+/* ================= CRITICAL PANEL ================= */
+
+.critical-panel{
+background:#fff7ed;
+padding:20px;
+border-radius:15px;
+box-shadow:0 5px 10px rgba(0,0,0,0.08);
+}
+
+.critical-panel h3{
+color:#444;
+}
+
+
+/* ================= TOP BAR ================= */
+
+.top-bar{
+display:flex;
+flex-wrap:wrap;
+gap:12px;
+}
+
+.top-bar input,
+.top-bar select{
+padding:10px;
+border-radius:8px;
+border:1px solid #e5e7eb;
+font-size:14px;
+background:#ffffff;
+}
+
+.top-bar button{
+padding:10px 16px;
+border:none;
+border-radius:8px;
+background:#d6d3d1;
+color:#333;
+cursor:pointer;
+font-weight:600;
+transition:0.2s;
+}
+
+.top-bar button:hover{
+background:#cbd5f5;
+}
+
+
+/* ================= TABLE ================= */
+
+.table-container{
+background:white;
+border-radius:15px;
+overflow:auto;
+box-shadow:0 8px 15px rgba(0,0,0,0.08);
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+th{
+background:#f1f5f9;
+color:#333;
+padding:12px;
+font-size:14px;
+}
+
+td{
+padding:12px;
+border-bottom:1px solid #f1f1f1;
+text-align:center;
+}
+
+tr:hover{
+background:#fafafa;
+}
+
+
+/* ================= TABLE BUTTONS ================= */
+
+td button{
+padding:6px 12px;
+border:none;
+border-radius:6px;
+font-size:12px;
+cursor:pointer;
+margin:2px;
+background:#e5e7eb;
+color:#333;
+transition:0.2s;
+}
+
+td button:hover{
+background:#d4d4d4;
+}
+
+
+/* ================= RISK BADGE ================= */
+
+.risk-badge{
+padding:4px 10px;
+border-radius:20px;
+color:#333;
+font-size:12px;
+font-weight:600;
+background:#f3f4f6;
+}
+
+
+/* ================= ADMIN PANELS ================= */
+
+.admin-panels{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
+}
+
+.panel{
+background:white;
+padding:20px;
+border-radius:15px;
+box-shadow:0 6px 12px rgba(0,0,0,0.08);
+}
+
+.panel h3{
+color:#444;
+margin-bottom:10px;
+}
+
+.panel input{
+padding:8px;
+border-radius:6px;
+border:1px solid #ddd;
+margin-right:6px;
+}
+
+.panel button{
+padding:6px 12px;
+border:none;
+background:#e5e7eb;
+color:#333;
+border-radius:6px;
+cursor:pointer;
+}
+
+.panel ul{
+margin-top:10px;
+padding-left:15px;
+}
+
+.panel li{
+margin-bottom:5px;
+}
+
+
+/* ================= EXTRA STATS ================= */
+
+.extra-stats{
+background:white;
+padding:20px;
+border-radius:15px;
+box-shadow:0 6px 12px rgba(0,0,0,0.08);
+}
+
+.extra-stats h3{
+color:#444;
+}
+
+.extra-stats ul{
+margin-bottom:15px;
+padding-left:20px;
+}
+
+
+/* ================= SCROLLBAR ================= */
+
+::-webkit-scrollbar{
+width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+background:#d4d4d4;
+border-radius:10px;
+}
+
+::-webkit-scrollbar-track{
+background:#f5f5f5;
+}

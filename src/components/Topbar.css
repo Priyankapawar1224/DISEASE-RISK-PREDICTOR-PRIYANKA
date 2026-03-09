@@ -1,0 +1,76 @@
+/* HEADER BOX */
+
+.header-box{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+background:linear-gradient(135deg,#f8fafc,#eef2ff,#f1f5f9);
+
+padding:25px 30px;
+
+border-radius:14px;
+
+box-shadow:0 8px 18px rgba(0,0,0,0.08);
+
+margin-bottom:25px;
+
+}
+
+
+/* HEADING */
+
+.page-heading{
+
+font-family:Algerian,serif;
+
+font-size:36px;
+
+letter-spacing:3px;
+
+background:linear-gradient(90deg,#7c3aed,#6366f1,#22c55e,#f59e0b);
+
+-webkit-background-clip:text;
+
+-webkit-text-fill-color:transparent;
+
+}
+
+
+/* SUBTITLE */
+
+.page-subtitle{
+
+font-size:14px;
+
+color:#64748b;
+
+margin-top:5px;
+
+}
+
+
+/* PROFILE IMAGE */
+
+.profile img{
+
+width:60px;
+
+height:60px;
+
+border-radius:50%;
+
+object-fit:cover;
+
+border:3px solid #e2e8f0;
+
+transition:0.3s;
+
+}
+
+.profile img:hover{
+
+transform:scale(1.1);
+
+}

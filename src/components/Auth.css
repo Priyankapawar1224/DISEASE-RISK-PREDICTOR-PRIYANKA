@@ -1,0 +1,165 @@
+/* GLOBAL RESET & BODY */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  /* New Vibrant Mix: Teal to Purple */
+  background: linear-gradient(135deg, #00cec9 0%, #6c5ce7 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* AUTH CONTAINER (CARD) */
+.auth-container {
+  background: #ffffff;
+  padding: 50px 40px; /* Increased padding for height */
+  width: 100%;
+  max-width: 450px; /* Slightly wider */
+  border-radius: 24px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* Decorative background circle inside card */
+.auth-container::after {
+  content: '';
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 150px;
+  height: 150px;
+  background: rgba(108, 92, 231, 0.1);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.auth-container h2 {
+  margin-bottom: 10px;
+  color: #2d3436;
+  font-size: 2.2rem;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+}
+
+.auth-container p.subtitle {
+  margin-bottom: 35px;
+  color: #636e72;
+  font-size: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* FORM STYLES */
+.auth-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px; /* More gap between inputs */
+  position: relative;
+  z-index: 1;
+}
+
+/* INPUT FIELDS */
+.auth-container input {
+  width: 100%;
+  padding: 16px 20px;
+  border: 2px solid #dfe6e9;
+  border-radius: 14px;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+  background-color: #f5f6fa;
+  color: #2d3436;
+}
+
+.auth-container input:focus {
+  border-color: #00cec9;
+  background-color: #fff;
+  box-shadow: 0 0 0 4px rgba(0, 206, 201, 0.1);
+  transform: translateY(-2px);
+}
+
+.auth-container input::placeholder {
+  color: #b2bec3;
+}
+
+/* SUBMIT BUTTON */
+.auth-container button {
+  width: 100%;
+  padding: 16px;
+  /* New Button Gradient */
+  background: linear-gradient(90deg, #00cec9 0%, #6c5ce7 100%);
+  color: white;
+  border: none;
+  border-radius: 14px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+  letter-spacing: 0.5px;
+  box-shadow: 0 5px 15px rgba(0, 206, 201, 0.3);
+}
+
+.auth-container button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(108, 92, 231, 0.4);
+  background: linear-gradient(90deg, #00b5b0 0%, #5b4bc4 100%);
+}
+
+.auth-container button:active {
+  transform: translateY(0);
+}
+
+/* ERROR MESSAGE */
+.error {
+  color: #d63031;
+  font-size: 0.9rem;
+  margin-top: 5px;
+  background-color: #fff0f0;
+  padding: 10px;
+  border-radius: 8px;
+  border-left: 4px solid #d63031;
+  text-align: left;
+}
+
+/* LINKS & TEXT */
+.auth-container p {
+  margin-top: 25px;
+  color: #636e72;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+/* SWITCH LINKS (Register/Forgot) */
+.switch-link {
+  color: #6c5ce7;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+.switch-link:hover {
+  color: #00cec9;
+  text-decoration: underline;
+}
+
+/* Optional: Add a small icon above title */
+.icon-box {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  display: block;
+}

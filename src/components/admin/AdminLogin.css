@@ -1,0 +1,183 @@
+/* ===== PAGE BACKGROUND ===== */
+
+.admin-container{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+
+background:linear-gradient(
+135deg,
+#cfefff,
+#e6f7ff,
+#d6f2ff
+);
+
+font-family:Arial, Helvetica, sans-serif;
+}
+
+/* ===== LOGIN BOX ===== */
+
+.admin-box{
+
+width:380px;
+padding:40px;
+
+background:white;
+
+border-radius:12px;
+
+box-shadow:0 10px 30px rgba(0,0,0,0.15);
+
+text-align:center;
+
+animation:fadeIn 0.5s ease;
+
+}
+
+/* ===== HEADING ===== */
+
+.admin-box h2{
+
+color:#0b6fa4;
+margin-bottom:10px;
+
+}
+
+.admin-box p{
+
+font-size:14px;
+color:#555;
+margin-bottom:20px;
+
+}
+
+/* ===== INPUT FIELDS ===== */
+
+.admin-box input{
+
+width:100%;
+padding:12px;
+
+margin:8px 0;
+
+border-radius:8px;
+border:1px solid #ccc;
+
+font-size:14px;
+
+outline:none;
+
+transition:0.3s;
+
+}
+
+/* INPUT FOCUS */
+
+.admin-box input:focus{
+
+border-color:#4db8ff;
+
+box-shadow:0 0 5px rgba(77,184,255,0.4);
+
+}
+
+/* ===== BUTTON AREA ===== */
+
+.buttons{
+
+display:flex;
+justify-content:space-between;
+margin-top:20px;
+
+}
+
+/* LOGIN BUTTON */
+
+.login-btn{
+
+flex:1;
+
+background:#0b9ed9;
+color:white;
+
+border:none;
+padding:12px;
+
+border-radius:8px;
+
+cursor:pointer;
+
+font-size:15px;
+
+transition:0.3s;
+
+margin-right:10px;
+
+}
+
+/* LOGIN HOVER */
+
+.login-btn:hover{
+
+background:#087fb3;
+
+transform:scale(1.03);
+
+}
+
+/* BACK BUTTON */
+
+.back-btn{
+
+flex:1;
+
+background:#e5e7eb;
+color:#333;
+
+border:none;
+padding:12px;
+
+border-radius:8px;
+
+cursor:pointer;
+
+font-size:15px;
+
+transition:0.3s;
+
+}
+
+/* BACK HOVER */
+
+.back-btn:hover{
+
+background:#d1d5db;
+
+}
+
+/* ===== ERROR MESSAGE ===== */
+
+.error{
+
+color:red;
+font-size:13px;
+margin-top:8px;
+
+}
+
+/* ===== ANIMATION ===== */
+
+@keyframes fadeIn{
+
+from{
+opacity:0;
+transform:translateY(-20px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}

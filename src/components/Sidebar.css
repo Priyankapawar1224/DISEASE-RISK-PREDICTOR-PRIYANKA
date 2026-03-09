@@ -1,0 +1,122 @@
+/* Sidebar container */
+.sidebar {
+  height: 100vh;
+  background: linear-gradient(180deg,#e6f4ff,#cfe9ff);
+  padding: 25px 20px;
+  box-shadow: 3px 0 15px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  top: 0;
+  font-family: "Segoe UI", sans-serif;
+  transition: width 0.3s ease, padding 0.3s ease;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+/* Open / Closed widths */
+.sidebar.open {
+  width: 240px;
+  padding: 25px 20px;
+}
+
+.sidebar.closed {
+  width: 60px;
+  padding: 25px 10px;
+}
+
+/* Logo */
+.sidebar h2 {
+  text-align: center;
+  margin-bottom: 35px;
+  color: #0a4d8c;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  transition: opacity 0.3s ease;
+}
+
+.sidebar h2.collapsed {
+  opacity: 0;
+}
+
+/* Menu items */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  padding: 12px 15px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  color: #084c7a;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar ul li:hover {
+  background: #b9e1ff;
+  color: #033e66;
+  transform: translateX(5px);
+}
+
+.sidebar ul li.active {
+  background: #4da3ff;
+  color: white;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.sidebar ul li.active:hover {
+  background: #3c93f0;
+}
+
+.sidebar ul li .icon {
+  margin-right: 10px;
+}
+
+/* Toggle button */
+.menu-toggle {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  cursor: pointer;
+  z-index: 1100;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  background: #e6f4ff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Mobile adjustments */
+@media (max-width: 900px) {
+  .sidebar {
+    position: fixed;
+    left: -240px;
+    width: 240px;
+    padding: 25px 20px;
+    transition: left 0.3s ease;
+  }
+
+  .sidebar.open {
+    left: 0;
+  }
+
+  .sidebar.closed {
+    left: -240px;
+  }
+
+  .menu-toggle {
+    top: 15px;
+    left: 15px;
+  }
+}

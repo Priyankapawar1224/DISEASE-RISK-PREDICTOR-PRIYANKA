@@ -8,6 +8,9 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+app.get("/", (req, res) => res.send("Disease Risk Predictor Backend is running!"));
+
+
 // MongoDB connection (Mongoose 7+ syntax)
 mongoose
   .connect(process.env.MONGO_URI)
